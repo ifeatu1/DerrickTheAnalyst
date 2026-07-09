@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Science — Ifeatu Anazonwu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">ifeatu<span class="dot">.</span>data</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="data-analysis.html">Data Analysis</a>
+      <a href="data-science.html">Data Science</a>
+      <a href="skills.html">Skills</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head science">
+  <div class="wrap">
+    <div class="glow-orb"></div>
+    <p class="eyebrow">Practice 02 — Data Science</p>
+    <h1>Predicting what<br><span class="outline-word">hasn't happened yet.</span></h1>
+    <p>Models built to be evaluated, not just trained — benchmarked algorithms, explained predictions, and forecasts with honest uncertainty. Filter by skill to see where each technique shows up.</p>
+    <div class="filter-bar" id="skill-filter"></div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="project-grid" id="project-grid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="fineprint">© <span id="year"></span> Ifeatu Anazonwu — built with real files, real screenshots, real findings.</span>
+    <div class="foot-links">
+      <a href="about.html">About &amp; contact</a>
+      <a href="skills.html">Skills index</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const projects = PROJECTS.filter(p => p.category === "data-science");
+  initSkillFilter("#skill-filter", "#project-grid", projects, { showCategoryBadge: false });
+</script>
+</body>
+</html>

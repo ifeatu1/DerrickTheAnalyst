@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Ifeatu Anazonwu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">ifeatu<span class="dot">.</span>data</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="data-analysis.html">Data Analysis</a>
+      <a href="data-science.html">Data Science</a>
+      <a href="skills.html">Skills</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap about-grid">
+  <div class="avatar">IA</div>
+  <div class="about-body">
+    <h1>Ifeatu Anazonwu</h1>
+    <span class="role mono">Data Analyst &amp; Data Scientist</span>
+
+    <span class="placeholder-note">PLACEHOLDER — replace this whole bio paragraph with your own</span>
+    <p>
+      I turn messy, real-world data into dashboards people use and models that hold up under scrutiny.
+      My work spans the full range from spreadsheet-level cleanup to benchmarking ML algorithms and
+      explaining their predictions — seven projects on this site, each with the original files attached
+      so you can see exactly how the result was built, not just the headline number.
+    </p>
+    <p>
+      (Swap this paragraph for your real bio — a couple of sentences on your background, what you're
+      looking for, and what makes your approach to data work distinct.)
+    </p>
+
+    <div class="contact-row">
+      <a class="btn" href="mailto:you@example.com">Email <span class="arrow">→</span></a>
+      <a class="btn outline" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn outline" href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p style="margin-top:18px;">
+      <span class="placeholder-note">PLACEHOLDER</span> — replace the email/LinkedIn/GitHub links above
+      (and in <code class="mono">js/data.js → SITE</code>) with your real contact details.
+    </p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="fineprint">© <span id="year"></span> Ife — built with real files, real screenshots, real findings.</span>
+    <div class="foot-links">
+      <a href="about.html">About &amp; contact</a>
+      <a href="skills.html">Skills index</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
